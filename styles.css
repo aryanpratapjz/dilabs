@@ -284,7 +284,7 @@ body {
 }
 
 .info-box {
-  padding-right: 68px;;
+
   display: flex;
   position:absolute;
   padding-left:0px;
@@ -297,7 +297,7 @@ body {
 .features {
   margin-top: 1.5rem;
   position: relative;
-  padding: 50px 130px 40px 40px;
+  
   width: 100%;
   justify-content: center;
   align-items: center;
@@ -307,9 +307,11 @@ body {
   
 }
 
-ul{
-  list-style-type: none;
-  padding-left:0px;
+.parabox{
+  margin-left:60px;
+ padding-bottom: 44px;
+ padding-left: 96px;
+ padding-right:98px;
 }
 
 .fa-solid {
@@ -393,4 +395,115 @@ ul{
 .bt-text{
   padding-top:22px;
   padding-left: 10px;
+}
+
+
+#outer-container-3 {
+  color: #ffffff;
+  height:57vh;
+  text-align: center;
+   margin-top:0px;
+   padding-bottom:120px;
+}
+
+.inner-container4 {
+  margin-top:0px;
+
+}
+.section-header h4 {
+  color: #4f46e5;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.section-header h2 {
+  font-size: 42px;
+  margin-bottom: 40px;
+  font-weight: 600;
+}
+
+.icons-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.icon-box {
+  color: #ffffff;
+  border-radius: 10px;
+  padding-top: 20px;
+  width: 300px;
+  height:319px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.3s ease;
+}
+
+
+.icon-placeholder {
+  border-radius: 50%;
+  height: 70px;
+  width: 70px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon-box h3 {
+  font-size: 1.5rem;
+  margin: 10px 0;
+}
+
+.icon-box p {
+  font-size: 20px;
+  
+  
+}
+
+.imgdv{ 
+  margin-top:40px;
+  height: 310px;
+  width:140px;
+  border-radius: 80%; 
+  background: linear-gradient(to right, #2667FF, #6c19ef);
+
+}
+
+.igdv{
+    margin-top:40px;
+  background-color: #010304;
+  border-radius: 80%; 
+  height: 310px;
+width:140px;
+
+}
+
+.cbssimg{
+  margin-top:28px;
+height: 70px;
+width:80px;
+}
+
+.docsimg{
+  margin-top:30px;
+  height: 60px;
+width:60px;
+  
+}
+
+.startupimg{
+  margin-top:25px;
+  height: 70px;
+width:70px;
+}
+
+.hshakeimg{
+  margin-top:20px;
+  height: 70px;
+width:70px;
 }
