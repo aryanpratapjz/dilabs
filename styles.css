@@ -412,15 +412,15 @@ body {
 }
 .section-header h4 {
   color: #4f46e5;
-  font-size: 1.2rem;
-  margin-bottom: 10px;
+  font-size: 18px;
+  margin-bottom: -15px;
   text-transform: uppercase;
   font-weight: bold;
 }
 
 .section-header h2 {
-  font-size: 42px;
-  margin-bottom: 40px;
+  font-size: 44px;
+  margin-bottom: 0px;
   font-weight: 600;
 }
 
@@ -441,6 +441,7 @@ body {
   flex-direction: column;
   align-items: center;
   transition: transform 0.3s ease;
+
 }
 
 
@@ -448,27 +449,32 @@ body {
   border-radius: 50%;
   height: 70px;
   width: 70px;
-  margin-bottom: 20px;
+  margin-top:70px;
+  margin-bottom: 0;
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-.icon-box h3 {
-  font-size: 1.5rem;
-  margin: 10px 0;
+  font-size:60px;
+  border-block:#cccccc;
+  color:#010304;
+  padding: 0px 15px;
+  text-shadow: 
+      -1px -1px 0 white, 
+      1px -1px 0 white, 
+      -1px 1px 0 white, 
+      1px 1px 0 white;
+      
 }
 
 .icon-box p {
   font-size: 20px;
   
-  
 }
 
 .imgdv{ 
   margin-top:40px;
-  height: 310px;
-  width:140px;
+ font-size:130px;
+ width:150px;
   border-radius: 80%; 
   background: linear-gradient(to right, #2667FF, #6c19ef);
 
@@ -476,23 +482,23 @@ body {
 
 .igdv{
     margin-top:40px;
+    font-size:130px;
+    width:150px;
   background-color: #010304;
   border-radius: 80%; 
-  height: 310px;
-width:140px;
 
 }
 
 .cbssimg{
   margin-top:28px;
 height: 70px;
-width:80px;
+width:70px;
 }
 
 .docsimg{
   margin-top:30px;
-  height: 60px;
-width:60px;
+  height: 70px;
+width:70px;
   
 }
 
@@ -507,3 +513,72 @@ width:70px;
   height: 70px;
 width:70px;
 }
+
+.outer-container4{
+  background: #142939;
+  padding-top:50px;
+  height:100vh;
+}
+
+.heading-box h6{
+  font-size:20px;
+  background: -webkit-linear-gradient(#062aaf, #333);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.carousel {
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  margin: auto;
+  overflow: hidden; 
+}
+
+
+
+.carousel-track {
+  display: flex;
+  transition: transform 0.5s ease-in-out; 
+  width: max-content; 
+}
+
+
+.carousel-item {
+  min-width: 150px;
+  margin: 10px;
+  height:500px;
+  text-align: center;
+  padding: 20px;
+}
+.carousel-item:hover{
+  zoom: 115%;
+}
+
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  z-index: 1;
+  font-size: 18px;
+}
+
+.carousel-btn.left {
+  left: 10px;
+}
+
+.carousel-btn.right {
+  right: 10px;
+}
+
+.carousel-btn:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+  
