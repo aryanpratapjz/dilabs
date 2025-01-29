@@ -493,35 +493,40 @@ margin-left: 50%;
 /* SECTION-3 */
 
 .outer-container3 {
-  margin-top:500px;
+  margin-top:400px;
   padding: 2rem;
+  
   }
 
 .inner-container3{
   margin-left:110px;
   margin-right:110px;
+  
 }
 .inner-container3 .content {
   display: flex;
   flex-direction: row;
-  margin-left:60px;
+  margin-left:0px;
   gap: 2rem;
 }
 
 .info-box {
   display: flex;
   position:absolute;
-  padding-left:0px;
+  padding-left:50px;
   flex-direction: column;
+  padding-right:50px;
   margin-left:160px;
   gap: 25rem;
+  height: 540px;
+  width:410px;
+  margin-top: -10px;
   background: linear-gradient(to right, #2667FF, #6c19ef);
 }
 
 .features {
-  margin-top: 1.5rem;
   position: relative;
-  width: 100%;
+  width:100%;
   justify-content: center;
   align-items: center;
   gap:40px;
@@ -531,23 +536,58 @@ margin-left: 50%;
 
 .parabox{
   margin-left:60px;
- padding-bottom: 44px;
- padding-left: 96px;
+ padding-left: 66px;
  padding-right:98px;
+ gap:40px;
 }
 
-.fa-solid {
+.parabox h3 {
+  font-size:19px;
+  width: 200%;
+}
+
+.parabox p{
+  font-size:16px;
+  line-height: 1.8;
+  width: 200%;
+}
+
+.feature1 h3{
+  margin-top:100px;
+}
+.feature2 h3{
+  margin-top:40px;
+}
+.feature1 .fa-solid {
     display: flex;
-    margin-top:20px;
+    margin-top:6px;
+    margin-left: 49px;
     justify-content: center;
     align-items: center;
     background-color: #fff; 
     color: #1e90ff; 
     border-radius: 80%; 
     width: 49px;
+    position: absolute;
     height: 49px;
     font-size: 15.5px; 
     flex-shrink: 0;
+}
+
+.feature2 .fa-solid {
+  display: flex;
+  margin-top:36px;
+  margin-left: 49px;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff; 
+  color: #1e90ff; 
+  border-radius: 80%; 
+  width: 49px;
+  position: absolute;
+  height: 49px;
+  font-size: 15.5px; 
+  flex-shrink: 0;
 }
   
 
@@ -555,7 +595,6 @@ margin-left: 50%;
   flex: 2;
   display: flex;
   margin-left:600px;
-  margin-bottom:20px;
   flex-direction: column;
   align-items: flex-start;
   gap: 2rem;
@@ -563,19 +602,21 @@ margin-left: 50%;
 
 .heading-box {
   text-align: left;
-  margin-left:130px;
   margin-bottom: 20px;
 }
 
 .heading-box h1 {
   margin: 0;
-  font-size: 42px;
+  font-size: 43px;
+  margin-left:-170px;
+  line-height: 1.8;
   font-weight: bold;
   color: #fff;
 }
 
 .line8{
-  height:20px;
+  height:15px;
+  margin-left:-125px;
 }
 
 .image-box2 {
@@ -586,7 +627,7 @@ margin-left: 50%;
 
 .image-box2 img {
   width:860px;
-  min-height: 500px;
+  min-height: 400px;
 }
 
 .play-button {
@@ -622,8 +663,9 @@ margin-left: 50%;
 
 @media (max-width: 455px) {
   .outer-container3 {
-    margin-top: 20px;
+    margin-top: 200px;
     padding: 1rem;
+    width:100%;      
   }
 
   .inner-container3 {
@@ -643,7 +685,11 @@ margin-left: 50%;
     padding: 1rem;
     margin: 0;
     gap: 1.5rem;
-    width: 100%;
+    height: 1600px;
+    width: 340%;
+    margin-left: 25px;
+    padding-left: 50px;
+    padding-right: 100px;
     background: linear-gradient(to bottom, #2667FF, #6c19ef); 
     border-radius: 10px;
   }
@@ -656,59 +702,81 @@ margin-left: 50%;
 
   .parabox {
     margin: 0;
+    height: 700px;
     padding: 1rem;
   }
+  .parabox h3 {
+    font-size:75px;
+    margin-left:270px;
+    margin-top:130px;
+  }
 
+  .parabox p{
+    font-size:64px;
+    margin-left:270px;
+    line-height: 1.8;;
+  }
   .fa-solid {
     margin: 0 auto;
-    width: 40px;
-    height: 40px;
-    font-size: 14px;
+    width: 120px !important;
+    height: 120px !important;
+    margin-top:150px !important;
+    position:absolute !important;
+    margin-left: 90px !important;
+    font-size: 54px !important;
   }
 
   .right-section {
-    margin: 0;
+    margin-top: 100px;
     flex-direction: column;
     align-items: center;
     gap: 1.5rem;
-    text-align: center;
+    width:100%;
+    text-align: left;
   }
 
   .heading-box {
     margin: 0;
+    width: 400%;
+    
   }
 
   .heading-box h1 {
-    font-size: 28px;
+    font-size: 145px;
     margin-bottom: 0.5rem;
-  }
+    padding-left: 90px;
+    line-height: 1.4;
+   }
 
   .line8 {
-    height: 15px;
+    height: 55px;
+    margin-left: 30px;
   }
 
   .image-box2 {
-    width: 100%;
+    width: 400%;
     margin: 0;
   }
 
   .image-box2 img {
-    width: 100%; 
-    min-height: auto; 
-    border-radius: 10px; 
+    width: 95%; 
+    height: 1400px; 
+    border-radius: 10px;
+    margin-top: 100px;
+    
   }
 
   .play-button {
-    position: static;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     gap: 0.5rem;
-    font-size: 14px; 
+    font-size: 64px; 
     padding: 0.5rem 1rem;
     background: #1e90ff; 
     color: #fff;
+    
     border-radius: 20px;
   }
 
