@@ -1000,13 +1000,14 @@ margin-left: 50%;
 }
 
 .heading-box{
-  margin-left:300px;
+  margin-left:450px;
 }
 .heading-box h1{
-  margin-top: -28px;
+  margin-top: -30px;
 }
 .heading-box h6{
   font-size:18px;
+  margin-left:-160px;
   text-transform: uppercase;
   background: -webkit-linear-gradient(#2667ff, #6c19ef);
   -webkit-background-clip: text;
@@ -1230,7 +1231,7 @@ margin-left: 50%;
 }
 .inner-container6 {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(5, 1fr);
   gap: 20px;
  
 }
@@ -1264,4 +1265,129 @@ margin-left: 50%;
 .team-info p {
   font-size: 14px;
   color: #ffffff;
+}
+
+
+/* Blog Section */
+.blog-section {
+  display: flex;
+  justify-content: center;
+  padding: 60px 20px;
+  color: #ffffff;
+  margin-bottom: 30px;
+}
+
+.blog-container {
+  max-width: 1300px;
+  width: 200%;
+  text-align: center;
+}
+
+/* Heading */
+.blog-heading {
+  font-size: 38px;
+  font-weight: bold;
+  margin-top:-10px;
+  margin-bottom: 50px;
+
+}
+
+.blog-heading2 {
+  text-transform: uppercase;
+  background: -webkit-linear-gradient(#2667ff, #6c19ef);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Blog Cards Layout */
+.blog-cards {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+
+}
+
+/* Individual Blog Card */
+.blog-card {
+  background-color: #0f1826;
+  border-radius: 12px;
+  padding: 20px;
+  text-align: left;
+  width: 100%;
+  max-width: 400px;
+}
+
+.blog-image:hover {
+  transition: .3s ease;
+}
+
+/* Blog Image Placeholder */
+
+
+#image1{
+  height:330px;
+  margin: -20px;
+  border-radius: 12px 12px 0px 0px;
+
+}
+
+#image2 {
+  height:330px;
+  margin: -20px;
+  border-radius: 12px 12px 0px 0px;
+ 
+}
+
+#image3 {
+  height:330px;
+  margin: -20px;
+  border-radius: 12px 12px 0px 0px;
+  
+}
+
+/* Category Tag */
+.category {
+  display: inline-block;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  margin-left:10px;
+}
+
+.marketing {
+  background: linear-gradient(to right, #6c63ff, #3281ff); 
+}
+
+.agency {
+  background: linear-gradient(to right, #6c63ff, #3281ff); 
+}
+
+/* Author Info */
+.author {
+  font-size: 16px;
+  color: #b5bfcd;
+  margin-bottom: 10px;
+  margin-left:10px;
+}
+
+/* Blog Title */
+.blog-title {
+  font-size: 25px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  margin-left:10px;
+}
+
+/* Read More Link */
+.read-more {
+  text-decoration: none;
+  color: rgb(214, 194, 194);
+  font-weight: bold;
+  display: inline-block;
+  margin-top: 10px;
+  margin-left:10px;
+  margin-bottom: 20px;
+
 }
