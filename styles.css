@@ -1142,7 +1142,6 @@ margin-left: 50%;
 .gradient-box .stat1 .stat2 {
   padding-bottom: 20px;
 }
-
 .stat1{
   
 }
@@ -1187,6 +1186,7 @@ margin-left: 50%;
   list-style: none;
   margin-top: 20px;
   color: #FFFFFF;
+  margin-left:-40px;
 }
 
 .right-box ul li {
@@ -1217,7 +1217,7 @@ margin-left: 50%;
 .text-section {
   text-align: center;
   margin-bottom: 40px;
-  position: relative;
+  ju
 }
 .text-section h2 {
   color: #ffffff;
@@ -1231,7 +1231,8 @@ margin-left: 50%;
 }
 .inner-container6 {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 20px;
  
 }
@@ -1265,6 +1266,109 @@ margin-left: 50%;
 .team-info p {
   font-size: 14px;
   color: #ffffff;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap');
+
+
+.testimonial {
+    width: 100%;
+    margin-top:80px;
+    height: 600px;
+    margin-bottom: 60px;
+    display: flex;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+     background-color: #0f172a;
+    overflow-x: hidden;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(90deg, #2875f4, #6a11cb);
+    color: white;
+    position: relative;
+    padding: 50px;
+}
+
+.testimonial-container {
+  width: 100%;
+  max-width: 900px;
+  text-align: left;
+  position: relative;
+}
+
+.quote-icon {
+  position: absolute;
+  top: -30px;
+  left: -20px;
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.quote-icon img {
+  width: 100px;
+  margin-top:-75px;
+  opacity: 0.2;
+  height: 150px;
+  object-fit: contain;
+}
+
+.testimonial-heading {
+  font-size: 45px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.testimonial-nav {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+.arrow {
+  font-size: 20px;
+  cursor: pointer;
+  padding: 5px;
+  transition: 0.3s;
+}
+
+.arrow:hover {
+  color: #ffdd57;
+}
+
+.testimonial-text {
+  font-size: 23px;
+  line-height: 1.6;
+  font-weight: 300;
+  width:200%;
+  margin-bottom: 20px;
+  max-width: 80%;
+}
+
+.author {
+  font-size: 48px;
+  font-weight: bold;
+}
+
+.designation {
+  font-size: 16px;
+  color: #ddd;
+}
+
+.star-icon {
+  position: absolute;
+  bottom: -30px;
+  right: -20px;
+  font-size: 50px;
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.star-icon img {
+  width: 100px;
+  margin-top:-135px;
+
+  height: 150px;
+  object-fit: contain;
 }
 
 
