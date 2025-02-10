@@ -1267,66 +1267,133 @@ margin-left: 50%;
 
 /* SECTION-7 */
 
+/* Outer container for the team section */
 .outer-container7 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 50px 20px;
-  box-sizing: border-box;
+  max-width: 1200px;
+  margin: auto;
+  padding: 80px 20px;
+  background-color: #0E1B2C; /* Dark background */
 }
+
+/* First row: Text + Two team members */
+.top-section {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Left-side text */
 .text-section {
-  text-align: center;
-  margin-bottom: 40px;
-  ju
+  max-width: 400px;
+  flex: 1;
 }
+
 .text-section h2 {
-  color: #ffffff;
-  font-size: 18px;
+  color: #8A5CF5;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 10px;
   text-transform: uppercase;
 }
+
 .text-section h1 {
-  font-size: 32px;
-  font-weight: bold;
-  color: #ffffff;
+  color: white;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.3;
 }
-.inner-container6 {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-columns: repeat(3, 1fr);
+
+/* Right-side: Two team members */
+.top-team {
+  display: flex;
   gap: 20px;
- 
+  flex: 1;
 }
+
+/* Second row: Three images spanning full width */
+.bottom-team {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 30px;
+}
+
+/* Individual team member card */
 .team-member {
   position: relative;
   overflow: hidden;
-  border-radius: 10px;
-  width: 100%;
+  border-radius: 12px;
+  transition: transform 0.3s ease;
 }
+
+.team-member:hover {
+  transform: translateY(-5px);
+}
+
+/* Image inside team member card */
 .team-member img {
   width: 100%;
   height: auto;
-  display: block;
-  border-radius: 10px;
+  border-radius: 12px;
+  object-fit: cover;
 }
+
+/* Name and role overlay */
 .team-info {
   position: absolute;
   bottom: 0;
-  background: rgba(0, 0, 0, 0.7);
-  width: 100%;
-  padding: 15px;
-  text-align: left;
-  color: white;
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
+  left: 0;
+  width: 80%;
+  background: linear-gradient(135deg, #1B2430, #1E3148);
+  padding: 15px 20px;
+  border-top-right-radius: 40px;
+  transition: background 0.3s ease;
 }
+
 .team-info h3 {
+  color: white;
   font-size: 18px;
+  font-weight: 600;
   margin-bottom: 5px;
 }
+
 .team-info p {
+  color: #A0AEC0;
   font-size: 14px;
-  color: #ffffff;
 }
+
+/* Special blue highlight effect for the last member */
+.team-member:nth-child(5) .team-info {
+  background: linear-gradient(135deg, #5D5FEF, #2356F9);
+}
+
+/* Responsive for smaller screens */
+@media (max-width: 1024px) {
+  .top-section {
+      flex-direction: column;
+      text-align: center;
+  }
+
+  .text-section {
+      max-width: 100%;
+      margin-bottom: 40px;
+  }
+
+  .top-team {
+      width: 100%;
+      justify-content: center;
+  }
+
+  .bottom-team {
+      flex-direction: column;
+      align-items: center;
+  }
+}
+
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap');
 
@@ -1558,22 +1625,25 @@ margin-left: 50%;
   color: #fff;
   padding: 10px 5%;
 }
+
 .footer-container {
   display: flex;
-  height: 50vh;
-  padding-top:50px;
+  flex-direction: row;
+  height: auto;
+  padding-top: 50px;
   justify-content: space-between;
   flex-wrap: wrap;
 }
+
 .footer-left {
   width: 30%;
-  height: 50vh;
+  min-height: 50vh;
   margin-top: -60px;
-  margin-left: -100px;;
-  background: rgb(54,32,224);
-  background: linear-gradient(90deg, rgba(54,32,224,1) 00%, rgba(89,39,175,1) 100%);
+  margin-left: -100px;
+  background: linear-gradient(90deg, rgba(54,32,224,1) 0%, rgba(89,39,175,1) 100%);
   padding: 40px;
 }
+
 .footer-logo {
   width: 190px;
   height: 70px;
@@ -1581,14 +1651,21 @@ margin-left: 50%;
   margin-bottom: 10px;
   margin-top: 100px;;
 }
+
 .footer-text {
   font-size: 16px;
   margin-left:230px;
   line-height: 1.6;
 }
+
+.footer-socials {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
 .footer-socials a {
-  margin-left:230px;
-  margin-right: 0px;
   color: #fff;
   font-size: 16px;
 }
@@ -1601,31 +1678,35 @@ margin-left: 50%;
   display: flex;
   justify-content: space-between;
   width: 65%;
+  flex-wrap: wrap;
   margin-top: 80px;
 }
+
 .footer-column {
   width: 30%;
+  margin-bottom: 20px;
 }
+
 .footer-column h3 {
   font-size: 22px;
-  margin-bottom: 25px;
+  margin-bottom: 15px;
 }
+
 .footer-column ul {
   list-style: none;
   padding: 0;
 }
+
 .footer-column ul li {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
+
 .footer-column ul li a {
   color: #fff;
   text-decoration: none;
   font-size: 14px;
 }
 
-.footer-column strong {
-  margin-bottom: 20px;
-}
 .newsletter-box {
   display: flex;
   align-items: center;
@@ -1633,13 +1714,15 @@ margin-left: 50%;
   border-radius: 25px;
   padding: 5px;
 }
+
 .newsletter-box input {
   border: none;
   background: transparent;
   padding: 10px;
-  color: #fff;
+  color: #000;
   flex: 1;
 }
+
 .newsletter-box button {
   background: #007bff;
   border: none;
@@ -1648,10 +1731,65 @@ margin-left: 50%;
   width: 35px;
   height: 35px;
 }
+
 .footer-bottom {
   text-align: center;
   margin-top: 20px;
   font-size: 17px;
   border-top: 1px solid rgba(255, 255, 255, 0.1);
   padding-top: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-left {
+    width: 90%;
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .footer-logo, .footer-text, .footer-socials {
+    margin-left: 0;
+  }
+
+  .footer-right {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-column {
+    width: 90%;
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer-left {
+    padding: 20px;
+  }
+
+  .footer-column {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer {
+    padding: 10px 3%;
+  }
+
+  .footer-left {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .footer-right {
+    width: 100%;
+  }
 }
