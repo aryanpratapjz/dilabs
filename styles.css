@@ -1281,14 +1281,14 @@ margin-left: 50%;
 /* First row: Text + Two team members */
 .top-section {
   display: flex;
-  width: 100%;
+  width: 120%;
   justify-content: space-between;
   align-items: center;
 }
 
 /* Left-side text */
 .text-section {
-  max-width: 400px;
+  max-width: 600px;
   flex: 1;
 }
 
@@ -1310,7 +1310,7 @@ margin-left: 50%;
 /* Right-side: Two team members */
 .top-team {
   display: flex;
-  gap: 20px;
+
   flex: 1;
 }
 
@@ -1327,16 +1327,15 @@ margin-left: 50%;
   position: relative;
   overflow: hidden;
   border-radius: 12px;
-  transition: transform 0.3s ease;
 }
 
 .team-member:hover {
-  transform: translateY(-5px);
+  
 }
 
 /* Image inside team member card */
 .team-member img {
-  width: 100%;
+  width: 80%;
   height: auto;
   border-radius: 12px;
   object-fit: cover;
@@ -1347,11 +1346,10 @@ margin-left: 50%;
   position: absolute;
   bottom: 0;
   left: 0;
-  width: 80%;
+  width: 60%;
   background: linear-gradient(135deg, #1B2430, #1E3148);
   padding: 15px 20px;
-  border-top-right-radius: 40px;
-  transition: background 0.3s ease;
+  border-top-right-radius: 240px;
 }
 
 .team-info h3 {
@@ -1366,12 +1364,10 @@ margin-left: 50%;
   font-size: 14px;
 }
 
-/* Special blue highlight effect for the last member */
 .team-member:nth-child(5) .team-info {
   background: linear-gradient(135deg, #5D5FEF, #2356F9);
 }
 
-/* Responsive for smaller screens */
 @media (max-width: 1024px) {
   .top-section {
       flex-direction: column;
@@ -1655,6 +1651,8 @@ margin-left: 50%;
 .footer-text {
   font-size: 16px;
   margin-left:230px;
+  color: #FFFFFF;
+  opacity: 0.9;
   line-height: 1.6;
 }
 
@@ -1671,6 +1669,7 @@ margin-left: 50%;
 }
 .footer-blob {
   width: 100px;
+  margin-left: 130px;
   height: auto;
   margin-top: 40px;
 }
