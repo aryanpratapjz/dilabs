@@ -2091,7 +2091,7 @@ color:rgb(192, 188, 188);
 }
 
 .footer-column ul li a {
-  color: #fff;
+  color:rgb(192, 188, 188);
   text-decoration: none;
   font-size: 14px;
 }
@@ -2172,7 +2172,7 @@ color:rgb(192, 188, 188);
 @media (max-width: 455px) {
   .footer {
     padding: 10px 3%;
-    height:4000px;
+    height:4800px;
     width: 400%;
     background: transparent;
     text-align: left;
@@ -2203,19 +2203,24 @@ color:rgb(192, 188, 188);
     align-items: left;
     font-weight: 500;
     text-align: left;
+    margin-top: 80px;
+    margin-bottom:170px;
     line-height: 2.0;
     margin-left: 40px;
   }
 
   .footer-socials {
     justify-content: center;
-    gap: 80px;
+    gap: 200px;
     font-family: 200px;
     margin-top: 10px;
   }
 
   .fab {
     font-size: 70px;
+    margin-bottom:100px;
+    margin-left:-750px;
+    
   }
   .footer-blob {
     display:none;
@@ -2232,44 +2237,52 @@ color:rgb(192, 188, 188);
     width: 100%;
     text-align: left;
     margin-bottom: 30px;
+    margin-left: 50px;
   }
 
-  .footer-column ul li a  {
-    font-size: 66px;
-    margin-bottom: 10px;
+  .footer-column ul li a {
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 2.3;
+    margin-bottom: 20px;
   }
 
   .footer-column h3 {
-    font-size: 66px;
-    margin-bottom: 10px;
+    font-size:80px;
+    margin-bottom: 100px;
   }
 
   .footer-column p {
     font-size: 60px;
     line-height: 1.6;
+    margin-bottom: 16px;
   }
-
+  .footer-column p strong {
+    color: white;
+  }
   .newsletter-box {
     flex-direction: column;
-    padding: 10px;
-    border-radius: 15px;
+    width:1100px;
+    margin-top:150px;
+    border-radius: 535px;
   }
 
   .newsletter-box input {
-    padding: 8px;
     width: 50%;
     text-align: left;
   }
 
   .newsletter-box button {
-    width: 18px;
-    height: 140px;
+    width: 180px;
+    height: 180px;
+    font-size: 60px;
+    margin-bottom: 50px;
     margin-top: 15px;
   }
 
   .footer-bottom {
-    font-size: 54px;
-    margin-top: 10px;
+    font-size: 65px;
+    margin-top: 120px;
     padding-top: 5px;
   }
 }
