@@ -1621,7 +1621,7 @@ color:rgb(192, 188, 188);
 
 /* Section 8 */
 
-.outer-container8 {
+.testimonial-section {
     width: 100%;
     margin-top:0px;
     height: 600px;
@@ -1638,7 +1638,7 @@ color:rgb(192, 188, 188);
     padding: 50px;
 }
 
-.inner-container6 {
+.testimonial-container {
   width: 100%;
   max-width: 900px;
   text-align: left;
@@ -1660,14 +1660,14 @@ color:rgb(192, 188, 188);
   object-fit: contain;
 }
 
-.container-heading {
+.testimonial-heading {
   font-size: 45px;
   font-weight: 700;
   width:100%;
   margin-bottom: 15px;
 }
 
-.container-nav {
+.testimonial-nav {
   display: flex;
   align-items: center;
   gap: 10px;
@@ -1686,7 +1686,7 @@ color:rgb(192, 188, 188);
   color: #ffdd57;
 }
 
-.container-text {
+.testimonial-text {
   font-size: 23px;
   line-height: 1.6;
   font-weight: 300;
@@ -1725,14 +1725,14 @@ color:rgb(192, 188, 188);
 /* Section-8-media */
 
 @media screen and (max-width: 455px) {
-  .outer-container8 {
+  .testimonial-section {
     height:3200px;
     width: 1800px;
    margin-top:-50px;
     text-align: center;
   }
 
-  .inner-container6 {
+  .testimonial-container {
     max-width: 2000px;
     height: 2400px;
     padding-right:40px;
@@ -1749,7 +1749,7 @@ color:rgb(192, 188, 188);
     margin-top: -30px;
   }
 
-  .container-heading {
+  .testimonial-heading {
     font-size: 148px;
     width:300%;
     margin-left: -4px;
@@ -1758,7 +1758,7 @@ color:rgb(192, 188, 188);
 
   }
 
-  .container-nav {
+  .testimonial-nav {
     font-size: 99px;
     gap: 175px;
     position: absolute;
@@ -1772,7 +1772,7 @@ color:rgb(192, 188, 188);
     padding: 43px;
   }
 
-  .container-text {
+  .testimonial-text {
     font-size: 90px;
     font-weight: 500;
     line-height: 1.9;
@@ -1862,21 +1862,21 @@ color:rgb(192, 188, 188);
   object-fit: cover;
 }
 
-#image1{
+#marketing-img {
   height:310px;
   margin: -20px;
   border-radius: 12px 12px 0px 0px;
 
 }
 
-#image2 {
+.agency-img {
   height:310px;
   margin: -20px;
   border-radius: 12px 12px 0px 0px;
  
 }
 
-#image3 {
+#marketing2-img {
   height:310px;
   margin: -20px;
   border-radius: 12px 12px 0px 0px;
@@ -1893,11 +1893,11 @@ color:rgb(192, 188, 188);
   margin-left:10px;
 }
 
-.marketing {
+.marketing-text {
   background: linear-gradient(to right, #6c63ff, #3281ff); 
 }
 
-.agency {
+.agency-text {
   background: linear-gradient(to right, #6c63ff, #3281ff); 
 }
 
@@ -1966,7 +1966,7 @@ color:rgb(192, 188, 188);
     border-radius: 50px;
   }
 
-  #image1, #image2, #image3 {
+  #marketing-img, #agency-img, #marketing2-img {
     height: 1090px;
     margin: 0;
     border-top-left-radius: 50px;
